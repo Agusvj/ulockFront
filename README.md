@@ -40,9 +40,17 @@ Rutas de momento
 localhost:3000
 
 localhost:3000/reservations
+
+
 localhost:3000/register
 
 localhost:3000/dashboardAdmin
+
+
 localhost:3000/dashboardAdmin/lockers
+
+
 localhost:3000/dashboardAdmin/reservas
+
+
 localhost:3000/dashboardAdmin/config
