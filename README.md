@@ -37,11 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 //
 Rutas de momento
 
-http://localhost:3000](http://localhost:3000
-http://localhost:3000](http://localhost:3000/reservations
-http://localhost:3000](http://localhost:3000/register
+localhost:3000
 
-http://localhost:3000](http://localhost:3000/dashboardAdmin
-http://localhost:3000](http://localhost:3000/dashboardAdmin/lockers
-http://localhost:3000](http://localhost:3000/dashboardAdmin/reservas
-http://localhost:3000](http://localhost:3000/dashboardAdmin/config
+localhost:3000/reservations
+localhost:3000/register
+
+localhost:3000/dashboardAdmin
+localhost:3000/dashboardAdmin/lockers
+localhost:3000/dashboardAdmin/reservas
+localhost:3000/dashboardAdmin/config
