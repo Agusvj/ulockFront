@@ -1,7 +1,9 @@
+import HeroSectionProfile from "./components/ProfileSection.js";
+
 export default function profilePage() {
   return (
     <div>
-      <h2>Profile Page</h2>
+      <HeroSectionProfile />
     </div>
   );
 }
