@@ -1,11 +1,28 @@
 "use client";
 
 import React, { useState } from "react";
+import { redirect } from "next/navigation";
 
 export default function LockerSelector() {
-  const [selectedProvincia, setSelectedProvincia] = useState("");
-  const [selectedLocalidad, setSelectedLocalidad] = useState("");
-  const [selectedSucursal, setSelectedSucursal] = useState("");
+  const [selectedProvince, setSelectedProvince] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+  const [selectedBranch, setSelectedBranch] = useState("");
+
+  const handleProvinceChange = (e) => {
+    setSelectedProvince(e.target.value);
+  };
+
+  const handleCityChange = (e) => {
+    setSelectedCity(e.target.value);
+  };
+
+  const handleBranchChange = (e) => {
+    setSelectedBranch(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div
@@ -18,7 +35,7 @@ export default function LockerSelector() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-10 w-3/4">
         <div className="flex flex-col items-center justify-center mx-auto w-full max-w-md">
-          <form className="w-full flex flex-col gap-7">
+          <form className="w-full flex flex-col gap-7" onSubmit={handleSubmit}>
             <div>
               <label className="font-poppins font-bold text-xl text-terciary">
                 Provincia
@@ -27,7 +44,7 @@ export default function LockerSelector() {
                 <option value="" disabled>
                   Select a province
                 </option>
-                <option></option>
+                <option>Tierra del Fuego</option>
               </select>
             </div>
 
@@ -39,7 +56,7 @@ export default function LockerSelector() {
                 <option value="" disabled>
                   Select a city
                 </option>
-                <option></option>
+                <option>Ushuaia</option>
               </select>
             </div>
 
@@ -51,11 +68,14 @@ export default function LockerSelector() {
                 <option value="" disabled>
                   Select a branch
                 </option>
-                <option></option>
+                <option>San martin 27</option>
               </select>
             </div>
 
-            <button className="bg-primary hover:bg-orange-800 transition-all ease-in delay-100 hover:scale-105 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer">
+            <button
+              className="bg-primary hover:bg-orange-800 transition-all ease-in delay-100 hover:scale-105 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer"
+              type="submit"
+            >
               Check for availability
             </button>
           </form>

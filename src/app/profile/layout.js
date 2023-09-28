@@ -1,14 +1,14 @@
+import { Header } from "./components/Header.js";
+import { Sidebar } from "./components/Sidebar.js";
 import "../globals.css";
-import Navbar from "../components/layout/Navbar.js";
-import Footer from "../components/layout/Footer.js";
 
-export default function RootLayout({ children }) {
+export default function DashboardAdminLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
+      <body className="bg-gray-400 min-h-screen">
+        <Header />
+        <Sidebar />
         {children}
-        <Footer />
       </body>
     </html>
   );
