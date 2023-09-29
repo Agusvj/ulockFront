@@ -40,7 +40,7 @@ export default function LockerSelector() {
               <label className="font-poppins font-bold text-xl text-terciary">
                 Provincia
               </label>
-              <select className="w-full text-primary p-1" required>
+              <select className="w-full text-primary p-1 rounded-lg" required>
                 <option value="" disabled>
                   Select a province
                 </option>
@@ -52,7 +52,7 @@ export default function LockerSelector() {
               <label className="font-poppins font-bold text-xl text-terciary">
                 Ciudad
               </label>
-              <select className="w-full text-primary p-1" required>
+              <select className="w-full text-primary p-1 rounded-lg" required>
                 <option value="" disabled>
                   Select a city
                 </option>
@@ -64,7 +64,7 @@ export default function LockerSelector() {
               <label className="font-poppins font-bold text-xl text-terciary">
                 Sucursal
               </label>
-              <select className="w-full text-primary p-1" required>
+              <select className="w-full text-primary p-1 rounded-lg" required>
                 <option value="" disabled>
                   Select a branch
                 </option>

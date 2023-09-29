@@ -29,6 +29,10 @@ export default function DashboardAdmin() {
                     </p>
                   </div>
                   <p className="font-bold">
+                    Codigo apertura:{" "}
+                    <span className="font-normal">435634565</span>
+                  </p>
+                  <p className="font-bold">
                     Locker Size:{" "}
                     <span className="font-normal">{reserve.locker}</span>
                   </p>

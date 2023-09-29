@@ -11,14 +11,12 @@ export default function heroSectionDate() {
   };
 
   return (
-    <div className="bg-hero-register bg-cover bg-center">
-      <div className="flex flex-col items-center justify-center pt-48 bg-primary-gradient px-6">
+    <div className="bg-hero-register bg-cover bg-center md:h-80vh">
+      <div className="flex flex-col items-center justify-center pt-48 bg-primary-gradient px-6 md:h-80vh">
         <h3 className="text-3xl font-bold tracking-tight text-terciary sm:text-4xl uppercase font-viga text-center border-b-2 border-secondary pb-6">
           Seleccion de reserva y tamaño de locker
         </h3>
-        <p className="text-secondary text-1xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-poppins text-center mt-3 font-bold">
-          Completa tus datos para poder brindarte un locker
-        </p>
+
         <DateTimePicker
           sizes={availableSizes}
           selectedSize={selectedSize}

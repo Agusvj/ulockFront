@@ -11,43 +11,55 @@ export default function DateTimePicker({
   onSelectSize,
 }) {
   return (
-    <div className="max-w-7xl px-6 lg:px-8 min-w-full h-full py-12 sm:py-16 flex flex-col gap-12 items-center justify-center">
-      <form className="flex flex-col gap-6 max-w-lg items-center justify-center w-full">
-        <label className="font-poppins text-lg font-bold text-terciary">
-          Selecciona un tamaño:
-        </label>
-        <select
-          value={selectedSize}
-          onChange={onSelectSize}
-          className="p-1 rounded text-secondary"
-        >
-          <option value="">Selecciona un tamaño</option>
-          {sizes.map((size) => (
-            <option key={size} value={size}>
-              {size}
-            </option>
-          ))}
-        </select>
+    <div>
+      <form className="bg-secondary p-6 rounded-lg my-6">
+        <p className="text-primary text-xl md:text-2xl font-poppins text-center font-bold border-b-2 border-primary pb-3 mb-3">
+          Completa los datos para poder brindarte un locker
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-[100%]">
+          <div className="flex flex-col gap-2">
+            <label className="font-poppins text-lg font-bold text-terciary">
+              Selecciona un tamaño:
+            </label>
+            <select
+              value={selectedSize}
+              onChange={onSelectSize}
+              className="p-1 rounded text-secondary"
+            >
+              <option value="">Selecciona un tamaño</option>
+              {sizes.map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        <label className="font-poppins text-lg font-bold text-terciary">
-          Fecha de ingreso:
-        </label>
-        <input
-          type="datetime-local"
-          className="text-secondary p-1 rounded"
-        ></input>
+          <div className="flex flex-col gap-2">
+            <label className="font-poppins text-lg font-bold text-terciary">
+              Fecha de ingreso:
+            </label>
+            <input
+              type="datetime-local"
+              className="text-secondary p-1 rounded"
+            ></input>
+          </div>
 
-        <label className="font-poppins text-lg font-bold text-terciary">
-          Fecha de egreso:
-        </label>
-        <input
-          type="datetime-local"
-          className="text-secondary p-1 rounded"
-        ></input>
-
-        <button className="bg-secondary hover:bg-blue-900 transition-all ease-in delay-100 hover:scale-105 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer">
-          Elegir fecha
-        </button>
+          <div className="flex flex-col gap-2">
+            <label className="font-poppins text-lg font-bold text-terciary">
+              Fecha de egreso:
+            </label>
+            <input
+              type="datetime-local"
+              className="text-secondary p-1 rounded"
+            ></input>
+          </div>
+        </div>
+        <div className="flex justify-center mt-6">
+          <button className="bg-primary hover:bg-orange-800 transition-all ease-in delay-100 hover:scale-105 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer">
+            Elegir fecha
+          </button>
+        </div>
       </form>
     </div>
   );

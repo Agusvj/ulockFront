@@ -23,6 +23,9 @@ module.exports = {
         secondary: "#002247",
         terciary: "#F6F7F8",
       },
+      height: {
+        "80vh": "80vh",
+      },
     },
     fontFamily: {
       viga: ["Viga", "sans-serif"],
