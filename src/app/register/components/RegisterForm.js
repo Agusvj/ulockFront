@@ -27,13 +27,13 @@ export default function RegisterForm() {
 
   return (
     <div className="max-w-7xl px-6 lg:px-8 min-w-full h-full py-12 sm:py-16 flex flex-col gap-12 items-center justify-center">
-      <h3 className="text-3xl font-bold tracking-tight text-terciary sm:text-4xl uppercase font-viga text-center border-b-2 border-secondary pb-6">
-        Formulario de Usuario
-      </h3>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-6 max-w-lg items-center justify-center w-full"
+        className="flex flex-col gap-6 max-w-lg items-center justify-center w-full bg-secondary p-8 rounded-lg"
       >
+        <h3 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl uppercase font-viga text-center border-b-2 border-primary pb-6">
+          Formulario de Usuario
+        </h3>
         <div className="w-full">
           <label className="font-poppins text-lg font-bold text-terciary">
             DNI:
@@ -92,7 +92,7 @@ export default function RegisterForm() {
 
         <button
           type="submit"
-          className="bg-secondary hover:bg-blue-900 transition-all ease-in delay-100 hover:scale-110 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer mt-4"
+          className="bg-primary hover:bg-orange-800 transition-all ease-in delay-100 hover:scale-110 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer mt-4"
         >
           Enviar
         </button>
