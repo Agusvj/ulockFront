@@ -7,11 +7,12 @@ export default function heroSectionR() {
         <h2 className="text-5xl font-bold font-viga mt-8 pb-5 uppercase text-terciary">
           Registro
         </h2>
-        <p className="text-secondary text-1xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-poppins text-center mt-3 font-bold">
+        <p className="text-secondary text-1xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-poppins text-center mt-3 mb-10 font-bold">
           Completa tus datos para poder brindarte un locker
         </p>
-        <button className="bg-secondary hover:bg-blue-900 transition-all ease-in delay-100 hover:scale-110 text-terciary font-semibold py-2 px-8 rounded inline-block self-center hover:cursor-pointer mt-12">
-          Entrar con Google
+        <button class="bg-white hover:bg-gray-100 text-gray-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex items-center">
+          <img className="w-6" src="/search.png" alt="logo"></img>
+          <span className="pl-3">Sign in with Google</span>
         </button>
         <RegisterForm />
       </div>
